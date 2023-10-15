@@ -1,0 +1,22 @@
+reference : https://www.youtube.com/watch?v=5bjYk6Hhd10&ab_channel=GoogleCloudTech
+
+
+enable Cloud Spanner API  
+
+
+first run the teraform script 
+in spanner studio
+
+CREATE TABLE EMPTABLE (
+  EMPID INT64,
+  EMPNAME STRING(256)
+) PRIMARY KEY (EMPID);
+
+
+
+INSERT INTO EMPTABLE(EMPID, EMPNAME) VALUES (1,"ROBIN");
+SELECT * FROM EMPTABLE
+
+
+
+LAB:

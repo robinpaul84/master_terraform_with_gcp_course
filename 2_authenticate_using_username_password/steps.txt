@@ -1,0 +1,13 @@
+USERNAME/PASSWORD login
+#You should already have created GCP account
+Install google cloud cli - https://cloud.google.com/sdk/docs/install-sdk
+    download the tar package
+    unzip 
+    ./google-cloud-sdk/install.sh
+    ./google-cloud-sdk/bin/gcloud init 
+        from the popup window select the account you used and allow access
+    ./google-cloud-sdk/bin/gcloud auth application-default login
+        from the popup window select the account you used and allow access
+
+Run terraform plan and apply
+

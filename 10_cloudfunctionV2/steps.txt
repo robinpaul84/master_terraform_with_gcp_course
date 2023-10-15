@@ -1,0 +1,18 @@
+Cloud function generation 2  :
+developed taking the advantages of cloud run
+Longer processing - http functions->  60 min (9 for v1)
+                    event driven function ->10 min (9 for v1 )
+Greater compute power  - upto 16gb + 4cpu  (2048mb for v1)
+Declarative traffic splitting - A/B testing ; canary deployment
+Concurrency
+90+ native event integrators
+
+
+
+https://medium.com/cloud-native-daily/deploy-cloud-functions-on-gcp-with-terraform-environment-2nd-gen-9b2f5f871600
+
+
+terraform code reference:
+https://cloud.google.com/functions/docs/samples/functions-v2-basic-gcs
+
+

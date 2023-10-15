@@ -1,0 +1,11 @@
+console:
+create a dataset
+then create a table 
+make sure to select schema to load automatically
+
+also open looker studio from tab
+
+
+lab:
+
+

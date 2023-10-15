@@ -1,0 +1,43 @@
+
+
+while running below sql commands , if you get error that Cloud SQL Admin API is not disabled
+then navigate to APIs and services -> Enabled APIs and services 
+    enable Cloud SQL Admin API
+
+
+try manual console demo using : 
+
+Check out any databases that were created within your instance:
+SHOW DATABASES;
+
+Create a new database:
+CREATE DATABASE city;
+
+Verify that the database was created:
+SHOW DATABASES;
+
+Use the gaming database to create a new table within it:
+USE city;
+Create a table and structure the data within the table:
+
+CREATE TABLE Persons (
+    PersonID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Address varchar(255),
+    City varchar(255)
+);
+
+INSERT INTO Persons
+VALUES('1', 'john','manor', '65 cromwel', 'sanfransisco' );
+
+select * from Persons;
+
+
+Verify the table was created within the database:
+SHOW TABLES;
+
+using cloudshell console create tables
+    gcloud sql connect console-demo-instance --user=me --quiet
+    
+

@@ -1,0 +1,28 @@
+cloud lab: 
+in cloud shell
+git clone https://github.com/GoolgeCloudPlatform/kubernetes-engine-samples
+cd kubernetes-engine-samples/hello-app
+export PROJECT_ID=masterterraformwithgcp-401503
+docker build -t gcr.io/${PROJECT_ID}/hello-app:v1 .
+gcloud services enable containerregistry.googleapis.com
+gcloud auth configure-docker
+docker push gcr.io/${PROJECT_ID}//hello-app:v1
+
+
+
+terraform lab : 
+
+https://developer.hashicorp.com/terraform/tutorials/kubernetes/gke
+
+https://github.com/hashicorp/learn-terraform-provision-gke-cluster
+
+
+
+kube commands : 
+kubectl config get-contexts
+to deploy image
+    kubectl create deployment hello-server-from-gcloud-v2 --image=gcr.io/tflab-310/hello-app:v1 
+to get pods available : 
+    kubectl get pods
+to expose port for external access:
+kubectl expose deployment hello-server-from-gcloud--type LoadBalancer --port 80 --target-port 8080

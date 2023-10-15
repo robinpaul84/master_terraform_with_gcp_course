@@ -1,0 +1,3 @@
+ Cloud Run instances handle requests in a parallel manner, and the level of parallelism is configurable.4
+
+ Cloud Run allows you to choose any kind of backend configuration, but it requires that you supply a docker configuration

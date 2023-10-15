@@ -1,0 +1,16 @@
+run terraform with 1 instance
+create 2nd instally from gcloud - name it vm-manual
+add code as of below:
+resource "google_compute_instance" "vm-manual" {
+ name         = "vm-manual"
+}
+ C:\course\terraform_1.5.7_windows_386\terraform.exe import google_compute_instance.vm-manual 1798845281533587259
+
+ now tfstate with have new vm configs
+
+ now add the extra codes 
+ do a tf plan 
+ explain what are the changes going to take effect
+ apply 
+ destroy
+

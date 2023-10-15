@@ -1,0 +1,7 @@
+https://www.youtube.com/watch?v=8DYWeI4Yc8Q&ab_channel=GoogleCloudTech
+
+
+
+after tf lab , you have to delete the table with gcloud command 
+
+    gcloud alpha firestore databases delete --database='tflab-class'

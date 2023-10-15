@@ -1,0 +1,48 @@
+What is app engine : 
+
+
+write your code in any of the supported languages,
+or run custom containers with the language and framework
+of your choice.
+When your code is ready, run gcloud app deploy.
+Mostly used for deploying services and apps in the form of code.
+You can easily host different versions of your app and split
+traffic between them for A/B testing and incremental feature
+rollouts.
+
+app Engine handles the work of uploading your code
+and running it on Google Cloud.
+It seamlessly scales from zero to millions of requests
+
+App Engine offers free managed SSL certificates
+on your custom domain , there by providing security to your app
+
+It auto scales from 0 to unlimited instances (It uses GCE underneath). It comes with 2 flavors Standard Environment and Flexible Environment.
+Standard Environment is really fast, scales down to 0 instances when no-one is using your app, scales up and down in seconds and has 
+dedicated Google services and libraries for caching, authentication etc. The caveat with Standard environment is that it is very restrictive
+since it runs in a sandbox.
+
+
+comparison between appengine and cloud run
+https://cloud.google.com/appengine/migration-center/run/compare-gae-with-run#:~:text=Cloud%20Run%20services%20can%20handle,flexibility%20in%20implementing%20these%20services.
+
+google console shell demo:
+You have to use gcloud cli to create app engine services
+
+gcloud init
+cd app_glcoudshell  
+gcloud app deploy 
+terraform :
+if you get access issues (error creating StandardAppVersion: googleapi: Error 403: App Engine Admin API has not been used in project),
+ then enable App Engine Admin API in google console
+
+
+terraform plan  -var="deployment_version=1"
+terraform apply  -var="deployment_version=1"
+
+once done with your lessons :
+go to google cloud console and make sure to delete all versions manually if not deleted by terraform
+dont forget to disable app - 
+    To disable an application; visit the Cloud  Console > App Engine > Settings > Disable Application button
+
+

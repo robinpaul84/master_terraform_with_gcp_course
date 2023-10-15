@@ -1,0 +1,21 @@
+This lab will create a vpc network with cidr 10.0.0.0/
+public subnet will be created with cidr 10.10.10.0/24 
+private subnet will be created with cidr 10.10.20.0/24
+3 firewall rules are created    
+    allow-ssh -> inbound rule to allow ssh traffic on tcp port 22 from any ip range
+    allow-http-rule-intenal -> inbound rule to allow http traffic on tcp port 80- from ip range - 10.10.10./24
+    allow-http-rule -> inbound rule to allow http traffic on tcp port 80 - from any ip range
+
+2 vm instance 
+    private-instance on private subnetwork - 10.10.20.0/24
+    public-instance on public subnetwork - 10.10.10.2/24
+
+http traffic to public instance is allowed via inbound rule - allow-http-rule 
+ssh traffic to public instance is allowed via inbound rule - allow-ssh
+http traffic to private instance is allowed via inbound rule - allow_http_internal - allowed only from public subnetwork
+
+
+vpc are global and not region based
+subnetwork is region specific ie. subnet is created on a region
+compute engine is avaialability zone specific ie. virtual machines or compute enginer are created on avaialability zones
+

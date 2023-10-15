@@ -1,0 +1,14 @@
+1.create a project in google cloud console
+2.create a service account in the project - with required permissions
+3.create the secret key and save it in your PC 
+4.Use the key for terraform project
+
+
+#note
+
+when you run terraform apply , if you see similar below error , then 
+"
+Cloud Build API has not been 
+used in project masterterraformwithgcp-401503 before or it is disabled.
+"
+from google cloud ; go to APIs and Services -> Enable APIs and Services -> enable Cloud Build API

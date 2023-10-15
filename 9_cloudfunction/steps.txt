@@ -1,0 +1,7 @@
+Cloud Function : 
+you can write your code in any supported language and 
+host the function in cloud function
+automatic on demain scaling 
+it support for both HTTP triggers and over 90 event-driven 
+triggers from gcp services
+max 10  min execution time which can be extended to 60 min 

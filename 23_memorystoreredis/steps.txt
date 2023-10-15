@@ -1,0 +1,4 @@
+console lab : https://www.youtube.com/watch?v=dObsPD-zXCg&ab_channel=WingsOfTechnology
+
+
+TF LAB https://cloud.google.com/memorystore/docs/redis/create-instance-terraform
