@@ -8,10 +8,6 @@ Concurrency
 90+ native event integrators
 
 
-
-https://medium.com/cloud-native-daily/deploy-cloud-functions-on-gcp-with-terraform-environment-2nd-gen-9b2f5f871600
-
-
 terraform code reference:
 https://cloud.google.com/functions/docs/samples/functions-v2-basic-gcs
 

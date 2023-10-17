@@ -2,8 +2,8 @@ how to ssh from your local pc to google vm:
 
 https://cloud.google.com/compute/docs/connect/add-ssh-keys#console
 
-1.ssh-keygen -t rsa -f gcp -C rpthetutor@gmail.com
+1.ssh-keygen -t rsa -f gcp -C EMAILADDRESS
 2.create a ssh key in google console 
     content is the public key - gcp.pub
 
- ssh -i gcp rpthetutor@ip
+ ssh -i gcp USER@ip
